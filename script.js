@@ -31,7 +31,7 @@ about_intro: "E² Bridge Project（通称EBP）は、英語を多くの国で発
 
 about_profile_title: "プロフィール",
 about_profile_body:
-  "北風 月（きたかぜ つき）\n" +
+  "つき\n" +
   "N高等学校 9期生\n\n" +
   "N高等学校の「マイプロジェクト」という活動で\n" +
   "E² Bridge Projectを企画し、\n" +
@@ -96,7 +96,7 @@ about_intro:
 
 about_profile_title: "Profile",
 about_profile_body:
-  "Tsuki Kitakaze\n" +
+  "Tsuki\n" +
   "N High School (Cohort 9)\n\n" +
   "Through N High School’s project-based program,\n" +
   "I launched the E² Bridge Project and now work on\n" +
