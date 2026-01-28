@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E² Bridge Project</title>
+  <meta name="description" content="E² Bridge Project official website. AI × Education for a future where children in Japan can speak English." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <button id="menuBtn" class="icon-btn" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+
+    <button id="homeLogoBtn" class="brand-link" aria-label="Go to Home">
+  <img class="top-logo" src="images/IMG_6460.jpeg" alt="E² Bridge Project logo" />
+</button>
+
+
+    <div class="topbar-actions">
+      <button id="langBtn" class="pill-btn" aria-label="Switch language">
+        日本語 / EN
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay" hidden></div>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar" aria-label="Site menu">
+    <div class="sidebar-header">
+      <div class="sidebar-title">Menu</div>
+      <button id="closeBtn" class="icon-btn" aria-label="Close menu">✕</button>
+    </div>
+
+    <nav class="nav">
+  <a class="nav-item is-active" href="#home" data-target="home">
+    <span class="nav-dot dot-blue" aria-hidden="true"></span>
+    <span data-i18n="nav_home">Home</span>
+  </a>
+
+  <a class="nav-item" href="#about" data-target="about">
+    <span class="nav-dot dot-red" aria-hidden="true"></span>
+    <span data-i18n="nav_about">About</span>
+  </a>
+
+  <a class="nav-item" href="#what" data-target="what">
+    <span class="nav-dot dot-blue" aria-hidden="true"></span>
+    <span data-i18n="nav_what">What We Do</span>
+  </a>
+
+  <a class="nav-item" href="#contact" data-target="contact">
+    <span class="nav-dot dot-yellow" aria-hidden="true"></span>
+    <span data-i18n="nav_contact">Contact</span>
+  </a>
+</nav>
+
+    <div class="sidebar-footer">
+      <small>© <span id="year"></span> E² Bridge Project</small>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- HOME -->
+    <section id="home" class="page is-visible" aria-label="Home">
+      <div class="container hero">
+        <div class="hero-card">
+          <img class="logo" src="images/IMG_6460.jpeg" alt="E² Bridge Project logo" />
+
+          <h1 class="catch" data-i18n="home_catch">Hello World! We're E² Bridge Project!!</h1>
+          <p class="lead" data-i18n="home_lead">
+            AI × Education で、日本の未来の子どもたちが英語を話せる世界へ。
+          </p>
+
+          <div class="meta-line" data-i18n="home_meta">
+            ※高校生チームが運営するプロジェクトです / Run by high school students in Japan.
+          </div>
+
+          <div class="hero-actions">
+            <button class="primary-btn" data-goto="about">
+              <span data-i18n="home_btn_about">About を見る</span>
+            </button>
+            <button class="ghost-btn" data-goto="contact">
+              <span data-i18n="home_btn_contact">お問い合わせ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page" aria-label="About">
+  <div class="container">
+
+    <!-- title -->
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="section-dot dot-red"></span>
+        <span data-i18n="about_title">About</span>
+      </h2>
+    </div>
+
+    <!-- short description -->
+    <p class="about-intro" data-i18n="about_intro">
+      E² Bridge Project（通称EBP）は、英語を多くの国で発達させ、
+      言語の壁を無くしてグローバル化を目指すプロジェクトです。
+    </p>
+
+    <!-- main layout -->
+    <div class="about-layout">
+
+      <!-- photo -->
+      <div class="about-photo">
+        <img src="images/IMG_8097.JPG" alt="Tsuki profile photo">
+      </div>
+
+      <!-- text -->
+      <div class="about-text">
+
+        <!-- profile -->
+        <div class="about-block">
+          <h3 class="about-subtitle" data-i18n="about_profile_title">
+            プロフィール
+          </h3>
+
+          <p data-i18n="about_profile_body">
+            北風 月（きたかぜ つき）<br>
+            N高等学校 9期生<br><br>
+            N高等学校の「マイプロジェクト」という活動で
+            E² Bridge Projectを企画し、
+            英語教育の研究や英語学習アプリ制作を進めています。
+          </p>
+        </div>
+
+        <!-- origin -->
+        <div class="about-block">
+          <h3 class="about-subtitle blue" data-i18n="about_origin_title">
+            名前の由来
+          </h3>
+
+          <p data-i18n="about_origin_body">
+            “English × Education”で世界とつながる橋を創る。<br>
+            それが E² Bridge Project です。<br><br>
+
+            Learn = 学ぶ<br>
+            Connect = つながる<br>
+            Shine = 輝く<br><br>
+
+            この3つを軸に研究を進めています。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- WHAT WE DO -->
+<section id="what" class="page" aria-label="What we do">
+  <div class="container">
+
+    <!-- title -->
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="section-dot dot-blue" aria-hidden="true"></span>
+        <span data-i18n="what_title">What We Do</span>
+      </h2>
+    </div>
+
+    <!-- intro -->
+    <p class="what-intro" data-i18n="what_intro">
+      研究→教材制作→体験(ワークショップ)→改良
+      このサイクルを繰り返すことで、今までにない新たな英語教材の開発を目指します
+    </p>
+
+    <div class="what-layout">
+
+      <!-- LEFT: Research list -->
+      <div class="what-col">
+        <h3 class="what-subtitle dot-blue" data-i18n="what_research_title">研究内容</h3>
+
+        <ul class="what-list">
+  <li data-i18n="research_1">
+    海外の英語先進国での<br>英語教育について
+  </li>
+  <li data-i18n="research_2">
+    現在の日本での英語教育<br>について
+  </li>
+  <li data-i18n="research_3">
+    日本の子どもたちの、<br>英語に対するイメージ
+  </li>
+  <li data-i18n="research_4">
+    国際間の言語の壁
+  </li>
+</ul>
+
+      </div>
+
+      <!-- RIGHT: Apps -->
+      <div class="what-col">
+        <h3 class="what-subtitle dot-blue" data-i18n="what_apps_title">制作したアプリ</h3>
+
+        <!-- App 1 -->
+        <div class="app-item">
+          <div class="app-text">
+            <div class="app-name" data-i18n="app1_name">Project-Based Learning</div>
+            <a class="app-link" href="https://moon-753.github.io/Project-Based-Learning.app/" target="_blank" rel="noreferrer">
+              https://moon-753.github.io/Project-Based-Learning.app/
+            </a>
+            <p class="app-desc" data-i18n="app1_desc">
+              北欧で採用されているプロジェクト型学習を、誰でも気軽に体験できるアプリ。
+            </p>
+          </div>
+
+          <div class="app-shot">
+            <img src="images/PBL_screenshot.png" alt="Project-Based Learning screenshot">
+          </div>
+        </div>
+
+        <!-- App 2 -->
+        <div class="app-item">
+          <div class="app-text">
+            <div class="app-name" data-i18n="app2_name">Word Note</div>
+            <a class="app-link" href="https://moon-753.github.io/Word-Note/" target="_blank" rel="noreferrer">
+              https://moon-753.github.io/Word-Note/
+            </a>
+            <p class="app-desc" data-i18n="app2_desc">
+              タイピング練習を取り入れた、英単語を楽しく覚えられるアプリ。
+            </p>
+          </div>
+
+          <div class="app-shot">
+            <img src="images/WN_screenshot.png" alt="Word Note screenshot">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- CONTACT -->
+<section id="contact" class="page" aria-label="Contact">
+  <div class="container">
+
+    <!-- title -->
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="section-dot dot-yellow" aria-hidden="true"></span>
+        <span data-i18n="contact_title">Contact</span>
+      </h2>
+    </div>
+
+    <!-- message -->
+    <p class="contact-message" data-i18n="contact_message">
+      お問い合わせ, 取材, ワークショップ参加など、お気軽にご連絡ください！
+    </p>
+
+    <!-- email -->
+    <div class="contact-block">
+      <h3 class="contact-subtitle dot-yellow">Email ✉️</h3>
+      <a class="contact-mail" href="mailto:e2bridge.pj@gmail.com">
+        e2bridge.pj@gmail.com
+      </a>
+    </div>
+
+    <!-- message 2 -->
+    <p class="contact-message second" data-i18n="contact_message2">
+      また、アンケートにもご協力くださるととても嬉しいです！
+    </p>
+
+    <!-- forms -->
+    <div class="contact-block">
+      <h3 class="contact-subtitle dot-yellow">Googleフォーム 📝</h3>
+
+      <ul class="contact-forms">
+        <li>
+  <span data-i18n="form_english_survey">英語に関するアンケート</span><br>
+  <a href="https://forms.gle/MnU4icbH3AaNvzGn9" target="_blank">
+    https://forms.gle/MnU4icbH3AaNvzGn9
+  </a>
+</li>
+
+<li>
+  <span data-i18n="form_app_feedback">アプリを使ってみた感想</span><br>
+  <a href="https://forms.gle/ijHC2PXmBe3nkCcN6" target="_blank">
+    https://forms.gle/ijHC2PXmBe3nkCcN6
+  </a>
+</li>
+
+<li>
+  <span data-i18n="form_contact">お問い合わせフォーム</span><br>
+  <a href="https://forms.gle/NEtnG1qSPxqyY4k26" target="_blank">
+    https://forms.gle/NEtnG1qSPxqyY4k26
+  </a>
+</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
